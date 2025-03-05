@@ -30,7 +30,7 @@ public class VirtualClosetManager {
         this.closet.add(item);
     }
 
-    //method to remove an item
+    // method to remove an item
     /**
      * removeItem method: This will remove an item from the closet.
      *
@@ -48,7 +48,7 @@ public class VirtualClosetManager {
         this.closet.clear();
     }
 
-    //method for closet size
+    // method for closet size
     /**
      * Gets the current closet size
      *
@@ -58,7 +58,7 @@ public class VirtualClosetManager {
         return this.closet.size();
     }
 
-    //method to search by clothing type (secondary Method)
+    // method to search by clothing type (secondary Method)
     /**
      * Implements searchByClothingType as a secondary method that uses remove
      * and add kernel methods
@@ -75,22 +75,22 @@ public class VirtualClosetManager {
             if (item.toLowerCase().contains(type.toLowerCase())) {
                 result.add(item);
             }
-            tempCloset.add(tempCloset);
+            tempCloset.add(item);
         }
         this.closet.add(tempCloset);
         return result;
     }
 
-    //method for outfit recommendation
+    // method for outfit recommendation
 
-    //sorting closettttt
-    //method to sort the closet by color
+    // sorting closettttt
+    // method to sort the closet by color
 
-    //method for containsItem: this can just check if the closet already has it
+    // method for containsItem: this can just check if the closet already has it
 
     /**
      * Main method.
-     * 
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -98,7 +98,7 @@ public class VirtualClosetManager {
         SimpleWriter out = new SimpleWriter1L();
 
         VirtualClosetManager closet = new VirtualClosetManager();
-        //asks user for their items and adds them to the closet if the user says yes.
+        // asks user for their items and adds them to the closet if the user says yes.
         out.println("Do you want to add an item to your closet?(y/n)");
         String input = in.nextLine();
         while (input.equalsIgnoreCase("y")) {
@@ -107,14 +107,14 @@ public class VirtualClosetManager {
             closet.addItem(item);
             System.out.println("Do you want to add another item? (y/n)");
         }
-        //User can find the size of their close
+        // User can find the size of their close
         out.println("Current Closet Size: " + closet.closetSize());
 
-        //user can choose to sort their closet
+        // user can choose to sort their closet
 
-        //user can get rid of an item
+        // user can get rid of an item
 
-        //user can ask for recommendations
+        // user can ask for recommendations
         in.close();
         out.close();
     }
