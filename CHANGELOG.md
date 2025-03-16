@@ -82,6 +82,20 @@ the following form: YYYY.0M.0D.
 - Added some kernel methods and a secondary method(searchByClothingType) method shown in the main method.
 -Junit and j2k
 
+
+
+## 2025.02.22
+
+### Added
+
+- Designed kernel and enhanced interfaces for <!-- insert name of component here --> component
+
+### Updated
+
+- Changed design to include ...
+
+```
+
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
