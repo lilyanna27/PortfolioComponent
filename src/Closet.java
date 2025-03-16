@@ -2,7 +2,7 @@
 /**
  * @author Joselyn Vasquez
  */
-public interface Closet extends VirtualClosetManagerKernel {
+public interface VirtualClosetManager extends VirtualClosetManagerKernel {
 
     /**
      * Searches the closet by clothing type.
